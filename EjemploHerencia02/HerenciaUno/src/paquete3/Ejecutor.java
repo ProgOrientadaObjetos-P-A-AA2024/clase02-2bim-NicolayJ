@@ -14,13 +14,17 @@ public class Ejecutor {
         
         // Creación de un objeto de tipo EstudianteDistancia
         
-        String nombre = "René";
-        String apellido = "Elizalde";
-        String identificacion = "110011";
-        int edad = 36;
+        String nombre = "Diego";
+        String apellido = "Jimenez";
+        String identificacion = "1150019568";
+        int edad = 19;
+        
         
         EstudianteDistancia estDistancia = new EstudianteDistancia(nombre, 
                 apellido, identificacion, edad);
+        estDistancia.establecerCostoAsignatura(100);
+        estDistancia.establecerNumeroAsginaturas(5);
+        estDistancia.calcularMatriculaDistancia();
         
         System.out.println(estDistancia);
                 

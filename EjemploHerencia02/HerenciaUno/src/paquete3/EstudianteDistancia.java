@@ -41,5 +41,38 @@ public class EstudianteDistancia extends Estudiante{
     public double obtenerMatriculaDistancia(){
         return matriculaDistancia;
     }
-
+    
+    /*
+    @Override
+    public String toString(){
+        String cadena = String.format("Nombre estudiante: %s\n"
+                + "Numero de asignarutas: %d\n"
+                + "Valor de asignatura: %.2f\n"
+                + "Valor matricula: %.2f\n", 
+                nombresEstudiante,
+                numeroAsignaturas,
+                costoAsignatura,
+                obtenerMatriculaDistancia());
+        
+        return cadena;
+    }
+    */
+    @Override
+    public String toString(){
+        String cadena = String.format("%s\n"
+                + "Numero de asignarutas: %d\n"
+                + "Valor de asignatura: %.2f\n"
+                + "Valor matricula: %.2f\n", 
+                super.toString(),
+                numeroAsignaturas,
+                costoAsignatura,
+                obtenerMatriculaDistancia());
+        
+        return cadena;
+    }
+    /*
+    Para hacer uso en una clase que hereda de una superclase en el metodo de 
+    toString lo que se debe hacer es poner "%s", super(indica que llamo a la 
+    superclase) y luego .toString (llamando al metodo toString)
+    */
 }

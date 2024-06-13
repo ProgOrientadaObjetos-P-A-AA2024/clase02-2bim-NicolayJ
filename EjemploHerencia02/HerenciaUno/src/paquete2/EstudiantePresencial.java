@@ -1,6 +1,10 @@
 
 package paquete2;
-
+/*
+Existe un error ya que esta clase se extiende o hereda de una super clase llamada
+Estudiante y esa super clase tiene un constructor y esta clase al heredar de una 
+super clase necesita de manera obligatoria hacer uso de ese constructor.
+*/
 public class EstudiantePresencial extends Estudiante{
     
     /*1.  Declarar
