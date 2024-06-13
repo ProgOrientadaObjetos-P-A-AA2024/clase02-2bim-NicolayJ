@@ -51,11 +51,17 @@ public class EstudiantePresencial extends Estudiante{
     
     @Override
     public String toString(){
-        String cadena = String.format("%s\n"
+        String cadena = String.format("Nombre: %s\n"
+                + "Apellido: %s\n"
+                + "Identificacion: %s\n"
+                + "Edad: %d\n"
                 + "Costo Crédito: $%.2f\n"
                 + "Número de Crédito: %d\n"
                 + "Total Matricula: $%.2f\n",
-                super.toString(),
+                nombresEstudiante,
+                obtenerApellidoEstudiante(),
+                obtenerIdentificacionEstudiante(),
+                obtenerEdadEstudiante(),
                 obtenerCostoCredito(),
                 obtenerNumeroCreditos(),
                 matriculaPresencial);
