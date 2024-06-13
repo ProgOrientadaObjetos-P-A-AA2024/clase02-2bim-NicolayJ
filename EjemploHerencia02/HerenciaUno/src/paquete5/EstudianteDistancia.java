@@ -7,7 +7,11 @@ public class EstudianteDistancia extends Estudiante{
     double costoAsignatura;
     double matriculaDistancia;
     
-        
+    /*
+    Este constructor tiene varios parametros que recibe algunos parametros para 
+    enviar a la superClase y tambien algunos parametros para la clase Estudiante
+    Distancia
+    */
     public EstudianteDistancia(String n, String ap, String iden, int e, 
             int numAsg, double costoAsg){
         super(n, ap, iden, e);
